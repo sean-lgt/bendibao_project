@@ -1,0 +1,44 @@
+/* pages/detail/detail.wxss */
+.container{
+  /* 最小高度 内容无法撑开页面 超过就失效*/
+  min-height: 100vh;
+  background-color: #eee;
+}
+.container image{
+  height: 400rpx;
+  width: 100vw;
+}
+.infos{
+  margin-top: 30rpx;
+  background-color: #fff;
+  padding: 30rpx;
+  font-size: 14px;
+}
+.infos .title{
+  font-size: 16px;
+}
+/* 评论部分 */
+.box-list .list{
+  margin-top: 20rpx;
+  padding: 20rpx;
+  background-color: #fff;
+}
+.box-list .list .user{
+  display: flex;
+  /* 两端对齐 */
+  justify-content: space-between;
+}
+.box-list .list .user-time{
+  display: flex;
+  /* 修改flex布局的默认方向(水平 justify-content: 调整的是主轴对齐方式) column*/
+  flex-direction: column;
+  /* 以前在默认主轴的方向是水平的时候 align-items: 调整的是侧轴的对齐方式 */
+  align-items: flex-end;
+  font-size: 12px;
+}
+.box-list .list .user-left{
+  font-size: 16px;
+}
+.box-list .list .user-time text:nth-child(1){
+  color: red;
+}

@@ -1,0 +1,45 @@
+<!--pages/cart/cart.wxml-->
+<view class="container">
+  <view class="edit clearfix">
+    <button size="mini">编辑</button>
+  </view>
+  <!-- 商品列表 -->
+  <view class="list-box">
+    <view class="list">
+      <radio-group class="singleCheck">
+        <radio checked="{{false}}"></radio>
+      </radio-group>
+      <view class="infos">
+        <image src="http://img5.imgtn.bdimg.com/it/u=360930211,517368292&fm=26&gp=0.jpg"></image>
+        <view class="introduce">
+          <view class="content">让我让我发文件噢佛寺服务二哥是分开付京东方个riot股二级</view>
+          <view class="price">￥29.00</view>
+        </view>
+        <!-- 计数器 -->
+        <view class="score">
+          <button>-</button>
+          <input value="2"></input>
+          <button>+</button>
+        </view>
+      </view>
+      <!-- 删除按钮 -->
+      <view class="singleDel">
+        <button type="warn">-</button>
+      </view>
+    </view>
+  </view>
+  <!-- 全选部分 -->
+  <view class="all">
+    <radio-group class="allCheck">
+      <radio checked="{{true}}"></radio>全选
+    </radio-group>
+    <view class="jiesuan">
+      <text>总计：￥29.00</text>
+      <button type="warn" size="mini">结算</button>
+    </view>
+    <!-- <view class="jiesuan">
+      <button type="warn" size="mini">删除</button>
+    </view> -->
+  </view>
+
+</view>

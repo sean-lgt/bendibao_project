@@ -1,0 +1,65 @@
+/* pages/list/list.wxss */
+.container{
+  padding: 20rpx;
+}
+.list{
+  padding: 20rpx 0;
+  border-bottom: 1px solid #ccc;
+  /* 开启flex布局 */
+  display: flex;
+  /* 定位 */
+  position: relative;
+}
+.list:last-child{
+  border-bottom: none;
+}
+.list image{
+  width: 250rpx;
+  height: 250rpx;
+}
+/* 中间infos */
+.list .infos{
+ font-size: 12px; 
+ padding-left: 20rpx;
+ /* flex:1 占父元素减去非flex宽度剩下的综合 */
+ /* flex: 1; */
+ width: 400rpx;
+}
+.list .infos > view{
+  padding: 10rpx 0;
+}
+.list .infos .title{
+  font-size: 14px;
+  width: 320rpx;
+  /* 设置超出省略号 隐藏*/
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.list .infos .address{
+
+  /* 设置超出省略号 */
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+/* 给星星设置定位 采用子绝父相 */
+
+.list .star{
+  position: absolute;
+  right: 0;
+  top: 10rpx;
+
+}
+.list .star view:nth-child(1){
+  color: #ccc;
+}
+.list .star view:nth-child(2){
+  color: orange;
+  /* 绝对定位  只要父元素不是静态就可以的*/
+  position: absolute;
+  top: 0;
+  width: 50%;
+  /* 超出隐藏部分 */
+  overflow: hidden;
+}

@@ -1,0 +1,117 @@
+/* pages/cart/cart.wxss */
+.container{
+  min-height: 100vh;
+  background-color: #eee;
+}
+.edit{
+  background-color: #fff;
+  padding: 10rpx 20rpx;
+}
+.edit button{
+  float: right;
+}
+/* 商品部分列表 */
+.list-box .list{
+  background-color: #fff;
+  margin-top: 20rpx;
+  display: flex;
+  
+}
+.list-box .list .singleCheck{
+  padding: 0 40rpx;
+  display: flex;
+  /* 垂直居中 */
+  align-items: center;
+}
+.list-box .list .infos{
+  display: flex;
+  flex: 1;
+  padding: 20rpx 20rpx 20rpx 0;
+  position: relative;
+}
+.list-box .list .infos image{
+  width: 180rpx;
+  height: 180rpx;
+}
+.list-box .list .infos .introduce{
+  padding-left: 20rpx;
+  font-size: 12px;
+}
+.list-box .list .infos .introduce .content{
+  font-size: 12px;
+  width: 300rpx;
+  /*  */
+  /* 文字两行省略h号 */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp:2;
+  overflow: hidden;
+  word-break: break-all;
+}
+.list-box .list .infos .introduce  .price{
+  color: red;
+   /* font-size: 12px; */
+}
+/* 计数器部分 */
+.list-box .list .score{
+  display: flex;
+  position: absolute;
+  width: 200rpx;
+  /* 设置偏移位置 */
+  right: 40rpx;
+  bottom: 20rpx;
+  border: 1px solid #ccc;
+
+}
+.list-box .list .score input{
+  flex: 1;
+  text-align: center;
+}
+.list-box .list .score button{
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 0;
+}
+/* 单个删除按钮 */
+.list-box .list .singleDel{
+  display: flex;
+  align-items: center;
+  padding-right: 20rpx;
+}
+.list-box .list .singleDel button{
+  width: 50rpx;
+  height: 50rpx;
+  /* background-color: red; */
+  color: #fff;
+  /* margin: 0; */
+}
+
+/* 全选部分 */
+.all{
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  /* 宽度由元素撑开 fixed absoutl*/
+  position: fixed;
+  width: 100vw;
+  padding-right: 20rpx;
+  box-sizing: border-box;
+  bottom: 0;
+  height: 120rpx;
+  padding: 20rpx 20rpx 20rpx 0;
+}
+.all .allCheck{
+  padding: 0 30rpx;
+  /* height: 80rpx; */
+  display: flex;
+  align-items: center;
+}
+.all .jiesuan{
+  display: flex;
+  align-items: center;
+}
+.all .jiesuan button{
+  border-radius: 6px;
+  font-size: 14px;
+  margin-left: 10rpx;
+}

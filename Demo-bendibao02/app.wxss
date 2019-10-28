@@ -1,0 +1,16 @@
+/**app.wxss**/
+/* 清除浮动的样 */
+.clearfix::after{
+  content: "";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: 0;
+  line-height: 0;
+}
+button,input{
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  border-radius: 0;
+}
